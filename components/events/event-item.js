@@ -5,8 +5,6 @@ import AddressIcon from '../icons/address-icon';
 import ArrowRightIcon from '../icons/arrow-right-icon';
 
 function EventItem({ item: { title, date, location, image, id } }) {
-  console.log(title, date);
-
   const humanReadableDate = new Date(date).toLocaleDateString('en-US', {
     day: 'numeric',
     month: 'long',
